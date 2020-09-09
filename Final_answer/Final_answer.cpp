@@ -9,6 +9,21 @@
 
 using namespace std;
 
+void Instructions()
+{
+	cout << "Hi. This is database program." << endl << endl;
+	cout << "In this database you can add, delete or find your date with event." << endl << endl;
+	cout << "If you want to add the event you must write 'Add' than you must enter \na date '2000-1-22' and an event 'Happy_Birthday!'." << endl << endl;
+	cout << "For example: Add 2000-1-22 Happy_Birtday!" << endl << endl;
+	cout << "If you want to delete an event, you must write 'Del' and a date." << endl << endl;
+	cout << "For example: Del 2000-1-22" << endl << endl;
+	cout << "Enter 'Find' if you want to find the event by date.\n\n";
+	cout << "For example: Find 2000-1-22\n\n";
+	cout << "If you want to see the entire database type 'Print'.\n\n";
+	cout << "For example: Print\n\n";
+	
+}
+
 class Date 
 {
 public:
@@ -150,6 +165,7 @@ Date ParseDate(const string& date)
 }
 
 int main() {
+	Instructions();
 	try {
 		Database db;
 
